@@ -1,0 +1,18 @@
+{
+  "name": "calendar-select",
+  "repo": "JayceTDE/calendar-select",
+  "description": "Select plugin for JayceTDE/calendar",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+      "JayceTDE/calendar": "*",
+      "component/delegate": "*",
+      "component/classes": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
