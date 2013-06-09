@@ -6,7 +6,7 @@
   "keywords": [],
   "dependencies": {
       "JayceTDE/calendar": "*",
-      "component/delegate": "*",
+      "JayceTDE/delegate": "*",
       "component/classes": "*"
   },
   "development": {},

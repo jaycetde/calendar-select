@@ -27,7 +27,7 @@ exports.plugin = function (cal) {
     
     delegate.bind(cal._body, 'td', 'click', function (e) {
         
-        var date = new Date(e.target.getAttribute('data-date'));
+        var date = new Date(e.delegateTarget.getAttribute('data-date'));
         
         if (date.getMonth() !== cal._date.getMonth()) {
             cal.setMonth(date.getMonth());
@@ -35,7 +35,7 @@ exports.plugin = function (cal) {
         
         cal.select(date);
         
-    });
+    }, false);
     
     cal.on('render', function (date) {
         if (cal._selected && date.getFullYear() === cal._selected.getFullYear() && date.getMonth() === cal._selected.getMonth()) {
